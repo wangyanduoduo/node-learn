@@ -2,7 +2,7 @@
  * @Author: wy
  * @Date: 2023-10-26 15:56:39
  * @LastEditors: wy
- * @LastEditTime: 2023-10-26 16:10:14
+ * @LastEditTime: 2023-10-26 22:09:36
  * @FilePath: /笔记/node/src/fs/createReadStream.js
  * @Description:
  */
@@ -10,7 +10,7 @@ const path = require('path');
 
 const { createReadStream } = require('fs');
 
-const rs = createReadStream(path.resolve(__dirname, './files/a.txt'), {
+const rs = createReadStream(path.resolve(__dirname, '../files/a.txt'), {
   encoding: 'utf-8',
   highWaterMark: 1, // 一次读多少个字符 默认64kb (和encoding有关，utf-8 表示读取的字符数， 默认表示读取的字节)
 });

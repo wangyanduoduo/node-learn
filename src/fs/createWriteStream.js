@@ -2,7 +2,7 @@
  * @Author: wy
  * @Date: 2023-10-26 16:30:23
  * @LastEditors: wy
- * @LastEditTime: 2023-10-26 16:39:18
+ * @LastEditTime: 2023-10-26 22:09:31
  * @FilePath: /笔记/node/src/fs/createWriteStream.js
  * @Description:
  */
@@ -10,7 +10,7 @@ const path = require('path');
 
 const { createWriteStream } = require('fs');
 
-const targetUrl = path.resolve(__dirname, './files/w.txt');
+const targetUrl = path.resolve(__dirname, '../files/w.txt');
 
 const ws = createWriteStream(targetUrl);
 

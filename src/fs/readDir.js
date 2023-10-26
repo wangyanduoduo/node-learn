@@ -2,7 +2,7 @@
  * @Author: wy
  * @Date: 2023-10-26 13:20:37
  * @LastEditors: wy
- * @LastEditTime: 2023-10-26 21:35:15
+ * @LastEditTime: 2023-10-26 22:09:44
  * @FilePath: /笔记/node/src/fs/readDir.js
  * @Description:
  */
@@ -59,7 +59,7 @@ class File {
 }
 
 async function test() {
-  const url = path.resolve(__dirname, './files');
+  const url = path.resolve(__dirname, '../files');
   const res = await File.getFile(url);
   console.log(await res.getContent());
 }
